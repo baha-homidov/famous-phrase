@@ -1,0 +1,25 @@
+.index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--mobile-padding);
+}
+
+.container {
+  border: 1px solid red;
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 600px) {
+  .index {
+    padding: var(--desktop-padding);
+    padding-bottom: 100px;
+  }
+  .container {
+    max-width: var(--desktop-max-width);
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1024px) {
+}

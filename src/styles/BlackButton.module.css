@@ -1,0 +1,46 @@
+.blackButton {
+  font-family: "Cygre", sans-serif;
+
+color: white;
+  background-color: transparent;
+  border: 3px solid white;
+
+  padding: var(--global-button-padding);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-size: var(--mobile-body-text);
+  font-weight: 600;
+  border-radius: 10px;
+  transition: 0.2s ease-in, transform 0.2s ease-in;
+  cursor: pointer;
+}
+
+.blackButton.iconPresent {
+  justify-content: left;
+  padding: var(--global-button-padding);
+
+  gap: 12px;
+}
+
+.img {
+  height: 24px;
+  width: auto;
+}
+
+.blackButton:hover {
+  color: #DF9D48;
+  border-color: #DF9D48;
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 600px) {
+  .blackButton {
+    font-size: var(--desktop-body-text);
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1024px) {
+}
